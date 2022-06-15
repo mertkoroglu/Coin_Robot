@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="coin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="navbar">Coin Robot</div>
+    <table id="allcoins" cellspacing="0">
+      <tr>
+        <th>Total</td>
+        <th>Accessable</th>
+      </tr>
+      <tr>
+        <td id="totalCoin">0</td>
+        <td id="accessable">0</td>
+      </tr>
+    </table>
+    <div id="inputs"> <input type="button" value="Start" id="btn" />
+    <input type="button" value="Find Path" id="btn2" /></div>
+<div id="bottom">
+    <table cellspacing="0" id="board">
+        <tr>
+          <td id="00b" class="box"></td>
+          <td id="01b" class="box"></td>
+          <td id="02b" class="box"></td>
+          <td id="03b" class="box"></td>
+          <td id="04b" class="box"></td>
+          <td id="05b" class="box"></td>
+          <td id="06b" class="box"></td>
+          <td id="07b" class="box"></td>
+          <td id="08b" class="box"></td>
+          <td id="09b" class="box"></td>
+        </tr>
+        <tr>
+          <td id="10b" class="box"></td>
+          <td id="11b" class="box"></td>
+          <td id="12b" class="box"></td>
+          <td id="13b" class="box"></td>
+          <td id="14b" class="box"></td>
+          <td id="15b" class="box"></td>
+          <td id="16b" class="box"></td>
+          <td id="17b" class="box"></td>
+          <td id="18b" class="box"></td>
+          <td id="19b" class="box"></td>
+        </tr>
+        <tr>
+          <td id="20b" class="box"></td>
+          <td id="21b" class="box"></td>
+          <td id="22b" class="box"></td>
+          <td id="23b" class="box"></td>
+          <td id="24b" class="box"></td>
+          <td id="25b" class="box"></td>
+          <td id="26b" class="box"></td>
+          <td id="27b" class="box"></td>
+          <td id="28b" class="box"></td>
+          <td id="29b" class="box"></td>
+        </tr>
+        <tr>
+          <td id="30b" class="box"></td>
+          <td id="31b" class="box"></td>
+          <td id="32b" class="box"></td>
+          <td id="33b" class="box"></td>
+          <td id="34b" class="box"></td>
+          <td id="35b" class="box"></td>
+          <td id="36b" class="box"></td>
+          <td id="37b" class="box"></td>
+          <td id="38b" class="box"></td>
+          <td id="39b" class="box"></td>
+        </tr>
+        <tr>
+          <td id="40b" class="box"></td>
+          <td id="41b" class="box"></td>
+          <td id="42b" class="box"></td>
+          <td id="43b" class="box"></td>
+          <td id="44b" class="box"></td>
+          <td id="45b" class="box"></td>
+          <td id="46b" class="box"></td>
+          <td id="47b" class="box"></td>
+          <td id="48b" class="box"></td>
+          <td id="49b" class="box"></td>
+        </tr>
+        <tr>
+          <td id="50b" class="box"></td>
+          <td id="51b" class="box"></td>
+          <td id="52b" class="box"></td>
+          <td id="53b" class="box"></td>
+          <td id="54b" class="box"></td>
+          <td id="55b" class="box"></td>
+          <td id="56b" class="box"></td>
+          <td id="57b" class="box"></td>
+          <td id="58b" class="box"></td>
+          <td id="59b" class="box"></td>
+        </tr>
+        <tr>
+          <td id="60b" class="box"></td>
+          <td id="61b" class="box"></td>
+          <td id="62b" class="box"></td>
+          <td id="63b" class="box"></td>
+          <td id="64b" class="box"></td>
+          <td id="65b" class="box"></td>
+          <td id="66b" class="box"></td>
+          <td id="67b" class="box"></td>
+          <td id="68b" class="box"></td>
+          <td id="69b" class="box"></td>
+        </tr>
+        <tr>
+          <td id="70b" class="box"></td>
+          <td id="71b" class="box"></td>
+          <td id="72b" class="box"></td>
+          <td id="73b" class="box"></td>
+          <td id="74b" class="box"></td>
+          <td id="75b" class="box"></td>
+          <td id="76b" class="box"></td>
+          <td id="77b" class="box"></td>
+          <td id="78b" class="box"></td>
+          <td id="79b" class="box"></td>
+        </tr>
+        <tr>
+          <td id="80b" class="box"></td>
+          <td id="81b" class="box"></td>
+          <td id="82b" class="box"></td>
+          <td id="83b" class="box"></td>
+          <td id="84b" class="box"></td>
+          <td id="85b" class="box"></td>
+          <td id="86b" class="box"></td>
+          <td id="87b" class="box"></td>
+          <td id="88b" class="box"></td>
+          <td id="89b" class="box"></td>
+        </tr>
+        <tr>
+          <td id="90b" class="box"></td>
+          <td id="91b" class="box"></td>
+          <td id="92b" class="box"></td>
+          <td id="93b" class="box"></td>
+          <td id="94b" class="box"></td>
+          <td id="95b" class="box"></td>
+          <td id="96b" class="box"></td>
+          <td id="97b" class="box"></td>
+          <td id="98b" class="box"></td>
+          <td id="99b" class="box"></td>
+        </tr>
+      </table>
+      <div id="bottomRight">
+        <div id="desc">Several coins should be placed in cells of an 10x10 board. A robot, 
+            located in the upper left cell of the board, needs to collect as 
+            many of the coins as possible and bring them to the bottom right 
+            cell. On each step, the robot can move either one cell to the right 
+            or one cell down from its current location.</div>
+        <div id="h1s">
+            <table cellspacing="0"><tr>
+                <td><span class="rowStyle">Row 0:</span></td>
+                <td><span id="0a"></span></td>
+            </tr>
+            <tr>
+                <td><span class="rowStyle">Row 1:</span></td>
+                <td><span id="1a"></span></td>
+            </tr>
+            <tr>
+                <td><span class="rowStyle">Row 2:</span></td>
+                <td><span id="2a"></span></td>
+            </tr>
+            <tr>
+                <td><span class="rowStyle">Row 3:</span></td>
+                <td><span id="3a"></span></td>
+            </tr>
+            <tr>
+                <td><span class="rowStyle">Row 4:</span></td>
+                <td><span id="4a"></span></td>
+            </tr>
+            <tr>
+                <td><span class="rowStyle">Row 5:</span></td>
+                <td><span id="5a"></span></td>
+            </tr>
+            <tr>
+                <td><span class="rowStyle">Row 6:</span></td>
+                <td><span id="6a"></span></td>
+            </tr>
+            <tr>
+                <td><span class="rowStyle">Row 7:</span></td>
+                <td><span id="7a"></span></td>
+            </tr>
+            <tr>
+                <td><span class="rowStyle">Row 8:</span></td>
+                <td><span id="8a"></span></td>
+            </tr>
+            <tr>
+                <td><span class="rowStyle">Row 9:</span></td>
+                <td><span id="9a"></span></td>
+            </tr>
+    </table>
+            
+        </div>
+        
+      </div>
+      
+</div>
+    
+    <script src="./coin.js"></script>
+  </body>
+</html>
